@@ -217,15 +217,26 @@ main {
 .contacto-encabezado-div {
     height: 200px;
     box-shadow: 1px 20px 30px rgb(231, 194, 197, 0.7);
-    box-shadow: 1px 20px 30px rgb(231, 194, 197, 0.7);
-    box-shadow: 1px 20px 30px rgb(231, 194, 197, 0.7);
+    background-color: rgb(231, 194, 197, 0.7);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+}
+
+.contacto-encabezado-div > p { 
+    color: rgb(220, 212, 202);
+    font-size: 60px;
+    text-shadow: 1px 1px 5px black;
+    font-family: 'Signika', sans-serif;
 }
 
 .contacto-encabezado-img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    opacity: 0.65;
+    object-fit:none;
+    opacity: 0.75;
+
 }
 
 .contacto-contenedor-form {
@@ -325,14 +336,14 @@ video {
     left: 0;
 }
 
-.colecciones-text {
+.tienda-online-text {
     font-size: 60px;
     color: rgb(148, 132, 112);
-    font-family: 'Nerko One', cursive;
+    font-family: 'Signika', sans-serif;
     text-shadow: 1px 1px 3px rgb(0, 0, 0);
 }
 
-.colecciones-boton {
+.tienda-online-boton {
     background-color: rgb(217, 197, 170) !important;
     font-weight: 600 !important;
     box-shadow: 1px 1px 3px rgb(0, 0, 0);
@@ -340,7 +351,14 @@ video {
     padding: 5px 15px !important;
 }
 
-
+.tienda-online-precio {
+    background-color: rgb(92, 92, 91); 
+    padding: 10px;
+    font-size: 18px;
+    box-shadow: 1px 1px 5px black;
+    border-radius: 3px;
+    color: antiquewhite;
+}
 
 /*ASIDE***************************************************************************/
 
@@ -360,7 +378,6 @@ footer {
 }
 
 .footer-menu {
-
     display: flex;
     list-style: none;
     gap: 30px;
@@ -368,6 +385,7 @@ footer {
     color: antiquewhite;
     padding-top: 15px;
     margin-left: 20px;
+    padding-left: 0;
 }
 
 .footer-menu > li > a {
@@ -448,6 +466,10 @@ footer {
     .hamburguesa-ico {
         display:inline-block;
         z-index: 9999;
+    }
+
+    .hamburguesa-ico-active {
+        position: fixed;
     }
 
     nav {
