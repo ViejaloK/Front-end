@@ -325,6 +325,23 @@ video {
     left: 0;
 }
 
+.colecciones-text {
+    font-size: 60px;
+    color: rgb(148, 132, 112);
+    font-family: 'Nerko One', cursive;
+    text-shadow: 1px 1px 3px rgb(0, 0, 0);
+}
+
+.colecciones-boton {
+    background-color: rgb(217, 197, 170) !important;
+    font-weight: 600 !important;
+    box-shadow: 1px 1px 3px rgb(0, 0, 0);
+    margin: 4px;
+    padding: 5px 15px !important;
+}
+
+
+
 /*ASIDE***************************************************************************/
 
 aside {
@@ -374,7 +391,7 @@ footer {
 .footer-menu > li > a:hover {
     color:rgb(203, 169, 186);
     text-shadow: 1px 1px 20px ;
-    font-size: 22px;
+    font-size: 21px;
     transition: 1s;
 }
 
@@ -434,7 +451,7 @@ footer {
     }
 
     nav {
-        position: absolute;
+        position: fixed;
         display: block;
         justify-content: flex-start;
         text-align: start;
