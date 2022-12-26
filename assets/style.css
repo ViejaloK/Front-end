@@ -343,22 +343,86 @@ video {
     text-shadow: 1px 1px 3px rgb(0, 0, 0);
 }
 
-.tienda-online-boton {
-    background-color: rgb(217, 197, 170) !important;
-    font-weight: 600 !important;
-    box-shadow: 1px 1px 3px rgb(0, 0, 0);
-    margin: 35px 30px;
-    padding: 7px 19px !important;
-}
-
 .tienda-online-precio {
     background-color: rgb(92, 92, 91); 
     padding: 10px;
     font-size: 18px;
-    box-shadow: 1px 1px 5px black;
+    box-shadow: 1px 1px 3px black;
     border-radius: 3px;
     color: antiquewhite;
+    border: none;
+    
 }
+
+.quienes-somos-redes {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.quienes-somos-facebook {
+    width: 50px;
+    margin: 15px;
+}
+
+.quienes-somos-instagram {
+    width: 50px;
+    margin: 15px;
+}
+
+.quienes-somos-twitter {
+    width: 50px;
+    margin: 15px;
+}
+
+.quienes-somos-text {
+    font-size: 19px;
+}
+.insta-foto {
+    height: 600px !important;
+    object-fit: scale-down;
+}
+
+.carita {
+    font-size: 25px;
+}
+
+.quienes-somos-titulo {
+    color: rgb(193, 177, 155);
+    text-shadow: 1px 1px 3px black;
+}
+
+.quienes-somos-img {
+    width: 450px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 7px black;
+    margin-left: 200px;
+}
+
+.quienes-somos-flex {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.colecciones-coleccion {
+    background-color: bisque;
+    box-shadow: 1px 1px 3px black;
+}
+
+.colecciones-encargo {
+    background-color: #ddd;
+    padding: 7px 15px;
+    text-decoration: none;
+    border: none;
+    box-shadow: 1px 1px 3px black;
+}
+
+.dropdown-item:hover {
+    background-color: antiquewhite;
+}
+
 
 /*BOOTSTRAP********************************************************************************/
 .bd-placeholder-img {
@@ -595,7 +659,16 @@ footer {
     .contacto-contenedor-form > form {
         width: 300px;
     }
+    
+    .quienes-somos-img {
+        margin-left: 0;
+        width: 300px;
+    }
 
+    .quienes-somos-flex {
+        margin: 0;
+    }
+    
     footer {
         grid-template-columns: 1fr;
         grid-template-rows: 110px 40px 70px;
