@@ -12,3 +12,10 @@
 @import "reset";
 @import "tienda-main";
 @import "video-operagx";
+
+.nav-active {
+    @media (max-width: 1024px) {
+        transform: translateX(0%);
+        transition: 1s;
+    }
+}

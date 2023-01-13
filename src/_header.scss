@@ -4,14 +4,6 @@ header {
     display: grid;
     grid-template-rows: 120px 80px;
 
-    img {
-        position: absolute;
-        width: 30px;
-        left: 10px;
-        top:10px;
-        display:none; 
-    }
-
     div {        
         justify-content: center;
         align-items: center;
@@ -37,6 +29,23 @@ header {
     }
 
     nav {
+
+        @media (max-width: 1024px) {
+            position: fixed;
+            display: block;
+            justify-content: flex-start;
+            text-align: start;
+            height: 100%;
+            margin: 0;
+            width: 300px;
+            padding: 25px;
+            background-color: rgb(39, 39, 39, 0.9);
+            z-index: 9998;
+            border: none;
+            transform: translateX(-100%);
+            transition: 1s;
+        }
+
         grid-row: 2;
         width: 70%;
         border-top: 1px solid #fff;
@@ -79,31 +88,10 @@ header {
             }
         }
 
-        @media (max-width: 1024px) {
-            position: fixed;
-            display: block;
-            justify-content: flex-start;
-            text-align: start;
-            height: 100%;
-            margin: 0;
-            width: 300px;
-            padding: 25px;
-            background-color: rgb(39, 39, 39, 0.9);
-            z-index: 9998;
-            border: none;
-            transform: translateX(-100%);
-            transition: 1s;
-        }
-
-        .nav-active {
-            @media (max-width: 1024px) {
-                transform: translateX(0%);
-                transition: 1s;
-            }
-        }
     }
-
+   
     @media (max-width: 1024px) {
         grid-template-rows: 120px;
     }
 }
+
