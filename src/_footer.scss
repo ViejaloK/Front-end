@@ -1,0 +1,105 @@
+footer {
+    display: grid;
+    grid-area: footer;
+    background-color: rgb(39, 39, 39);
+    grid-template-rows: 1fr;
+    grid-template-columns: 0.95fr 0.05fr;
+
+    @media (max-width: 1024px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: 110px 40px 70px;
+    }
+
+    .footer-menu {
+        display: flex;
+        list-style: none;
+        gap: 30px;
+        font-size: 20px;
+        color: antiquewhite;
+        padding-top: 15px;
+        margin-left: 20px;
+        padding-left: 0;
+
+        li {
+            a {
+                text-decoration: none;
+                color: antiquewhite;
+                font-family: 'Nerko One', cursive;
+                font-size: 20px;
+                font-weight: 400;
+                text-shadow: 2px 2px 50px;
+
+                :hover {
+                    color:rgb(203, 169, 186);
+                    text-shadow: 1px 1px 20px ;
+                    font-size: 21px;
+                    transition: 1s;
+                }
+            }
+
+            p {
+                font-family: 'Nerko One', cursive;
+            }
+        }
+    }
+
+    .footer-redes-text {
+        display: none;
+
+        @media (max-width: 1024px) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            grid-row: 2;
+            font-size: 22px;
+            color: antiquewhite;
+            font-family: 'Nerko One', cursive;
+        }
+    }
+
+    .footer-redes {
+        display: flex;
+        list-style: none;
+        gap: 25px;
+        font-size: 22px;
+        color: #faebd7;
+        padding-top: 15px;
+        position: relative;
+        justify-content: flex-end;
+        font-family: 'Nerko One', cursive;
+
+        .footer-icon-facebook {
+            width: 30px;
+            position: relative;
+            bottom: 2px;
+        }
+        
+        .footer-icon-twitter {
+            width: 30px;
+        }
+        
+        .footer-icon-instagram {
+            width: 30px;
+        }
+
+        @media (max-width: 1024px) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-row: 3;
+        }
+    }
+
+    .footer-icon-whatsapp {
+        width: 60px;
+        position: fixed;
+        bottom: 60px;
+        right: 10px;
+        z-index: 1000;
+
+        @media (max-width: 1024px) {
+            right: 10px;
+            bottom: 10px;
+        }
+    }
+}

@@ -1,0 +1,109 @@
+header {
+    grid-area: header;
+    background-color: rgb(39, 39, 39);
+    display: grid;
+    grid-template-rows: 120px 80px;
+
+    img {
+        position: absolute;
+        width: 30px;
+        left: 10px;
+        top:10px;
+        display:none; 
+    }
+
+    div {        
+        justify-content: center;
+        align-items: center;
+        grid-row: 1;
+        display: flex;
+        font-size: 105px;
+        text-shadow: 2px 2px 10px rgb(143, 142, 142);
+        font-family: 'Euphoria Script', cursive;
+        letter-spacing: 3px;
+        font-weight: 500;
+
+        a {
+            text-decoration: none;
+            color: antiquewhite;
+
+            :hover {
+                color:rgb(203, 169, 186);
+                text-shadow: 1px 1px 20px ;
+                font-size: 135px;
+                transition: 2s;
+            }
+        }
+    }
+
+    nav {
+        grid-row: 2;
+        width: 70%;
+        border-top: 1px solid #fff;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin: auto;
+
+        ul {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+            font-size: 22px;
+            color: antiquewhite;
+            padding-top: 15px;
+
+            @media (max-width: 1024px) {
+                display: inline-block;   
+            }
+
+            li {
+                @media (max-width: 1024px) {
+                    padding: 20px;
+                }
+                a {
+                    text-decoration: none;
+                    color: antiquewhite;
+                    font-family: 'Nerko One', cursive;
+                    font-size: 27px;
+                    font-weight: 400;
+                    text-shadow: 2px 2px 50px ;
+
+                    :hover {
+                        color:rgb(203, 169, 186);
+                        text-shadow: 1px 1px 20px ;
+                        font-size: 29px;
+                        transition: 1s;
+                    }
+                }
+            }
+        }
+
+        @media (max-width: 1024px) {
+            position: fixed;
+            display: block;
+            justify-content: flex-start;
+            text-align: start;
+            height: 100%;
+            margin: 0;
+            width: 300px;
+            padding: 25px;
+            background-color: rgb(39, 39, 39, 0.9);
+            z-index: 9998;
+            border: none;
+            transform: translateX(-100%);
+            transition: 1s;
+        }
+
+        .nav-active {
+            @media (max-width: 1024px) {
+                transform: translateX(0%);
+                transition: 1s;
+            }
+        }
+    }
+
+    @media (max-width: 1024px) {
+        grid-template-rows: 120px;
+    }
+}

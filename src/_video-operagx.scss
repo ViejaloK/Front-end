@@ -1,0 +1,7 @@
+/*Para aclarar, en caso de usar OperaGX tiene un control para que los video se puedan desplegar
+esto termina arruinando la intencion del video en la pagina contactos. y la unica forma que consegui
+quitarlo fue esta*/
+
+#detach-button-host {
+    display: none !important;
+}

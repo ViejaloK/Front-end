@@ -1,0 +1,11 @@
+@media (max-width: 1024px) {
+    .hamburguesa-ico {
+        display:inline-block;
+        z-index: 9999;
+    }
+    
+    
+     .hamburguesa-ico-active {
+        position: fixed;
+    }
+}

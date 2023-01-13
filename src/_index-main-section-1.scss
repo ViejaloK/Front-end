@@ -1,0 +1,138 @@
+
+.inicio-encabezado-texto-1 {
+    position: absolute;
+    font-size: 40px;
+    color: antiquewhite;
+    font-family: 'Nerko One', cursive;
+    font-weight: 100;
+    top: 400px;
+    left: 100px;
+    text-shadow: 1px 1px 5px rgb(0, 0, 0);
+    z-index: 100;
+
+    @media (max-width: 1024px) {
+        top: 300px;
+        font-size: 30px;
+        left: 30px;
+    }
+}
+
+.inicio-encabezado-texto-2 {
+    position: absolute;
+    font-size: 40px;
+    color: antiquewhite;
+    font-family: 'Nerko One', cursive;
+    font-weight: 100;
+    top: 700px;
+    right: 100px;
+    text-shadow: 1px 1px 5px rgb(0, 0, 0);
+    z-index: 100;
+
+    @media (max-width: 1024px) {
+        top: 500px;
+        font-size: 30px;
+        right: 20px;
+    }
+}
+
+.inicio-encabezado-contenedor-1 {
+    position: relative;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 80vh;
+    overflow: hidden;
+
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        z-index: 10;
+    }
+
+    .inicio-encabezado-img-1 {
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+        animation-delay: 2s;
+        animation-name: img-missing-left-1;
+
+        @keyframes img-missing-left-1 {
+            0% {
+            }
+            
+            18% {
+                transform: translate(0%);
+            }
+        
+            30% {
+                transform: translate(-100%);  
+        
+            }
+        
+            65% {
+                transform: translate(-100%);  
+            }
+            
+            75% {
+                transform: translate(0%);
+            }
+        
+            100% {
+                transform: translate(0%);
+            }
+        }
+    }
+
+    .inicio-encabezado-img-2 {
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+        animation-delay: 2s;
+        animation-name: img-missing-left-2;
+
+        @keyframes img-missing-left-2 {
+            0% {
+            }
+            
+            18% {
+                transform: translate(0%);
+            }
+        
+            30% {
+                transform: translate(100%);  
+            }
+        
+            65% {
+                transform: translate(100%);  
+            }
+            
+            75% {
+                transform: translate(0%);
+            }
+        
+            100% {
+                transform: translate(0%);
+            }
+        }
+    }
+
+}
+
+.inicio-encabezado-contenedor-2 {
+    position: absolute;
+    top: 200px;
+    left: 0;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 80vh;
+    width: 100%;
+
+    @media (max-width: 1024px) {
+        top:120px;
+    }
+
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        z-index: 5;
+    }
+}

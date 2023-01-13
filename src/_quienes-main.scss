@@ -1,0 +1,46 @@
+.quienes-somos-redes {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.quienes-somos-icon {
+    width: 50px;
+    margin: 15px;
+}
+
+.quienes-somos-text {
+    font-size: 19px;
+}
+
+.carita {
+    font-size: 25px;
+}
+
+.quienes-somos-titulo {
+    color: rgb(193, 177, 155);
+    text-shadow: 1px 1px 3px black;
+}
+
+.quienes-somos-img {
+    width: 450px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 7px black;
+    margin-left: 200px;
+
+    @media (max-width: 1024px) {
+        margin-left: 0;
+        width: 300px;
+    }
+}
+
+.quienes-somos-flex {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+
+    @media (max-width: 1024px) {
+        margin: 0; 
+    }
+}
