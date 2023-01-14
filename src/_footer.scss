@@ -1,7 +1,7 @@
 footer {
     display: grid;
     grid-area: footer;
-    background-color: rgb(39, 39, 39);
+    background-color: $colorMenu;
     grid-template-rows: 1fr;
     grid-template-columns: 0.95fr 0.05fr;
 

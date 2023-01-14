@@ -3,7 +3,7 @@
     font-size: 45px;
     text-align: center;
     padding: 35px;
-    color: antiquewhite;
+    color: $colorPrimario;
     -webkit-text-stroke-color: black;
     -webkit-text-stroke-width: 0.7px;
     text-shadow: 1px 1px 5px black;
@@ -37,7 +37,7 @@
     min-width: 285px;
     justify-content: center;
     padding-top: 35px;
-    background-color: antiquewhite;
+    background-color: $colorPrimario;
 
     @media (max-width: 1024px) {
         padding: 5px;

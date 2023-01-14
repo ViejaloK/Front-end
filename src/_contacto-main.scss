@@ -1,7 +1,7 @@
 .contacto-body {
     min-height: 100vh;
     position: relative;
-    background-color: rgb(255, 255, 255);
+    background-color: white;
     opacity: 0.9;
 
     video {
@@ -17,8 +17,8 @@
 
     .contacto-encabezado-div {
         height: 200px;
-        box-shadow: 1px 20px 30px rgb(231, 194, 197, 0.7);
-        background-color: rgb(231, 194, 197, 0.7);
+        box-shadow: 1px 20px 30px $colorContacto;
+        background-color: $colorContacto;
         align-items: center;
         display: flex;
         justify-content: center;
@@ -45,7 +45,7 @@
         text-align: center;
         padding: 15px;
         font-size: 19px;
-        color: antiquewhite;
+        color: $colorPrimario;
         text-shadow: 1px 1px 2px #333;
         padding-top: 50px;
         font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -83,7 +83,7 @@
 
                 :focus {
                     outline: none;
-                    background-color: rgb(255, 246, 234);
+                    background-color: white;
                 }
 
                 ::placeholder {
@@ -95,7 +95,7 @@
                     width: 150px;
                     color: #666;
                     font-size: 21px;
-                    box-shadow: 1px 1px 15px  rgb(147, 119, 121);
+                    box-shadow: 1px 1px 15px  $colorPrimario;
 
                     :active {
                         background-color: rgb(232, 208, 177);
@@ -115,13 +115,15 @@
 
             textarea {
                 min-height: 140px;
-                width: 600px;
+                max-width: 600px;
                 resize: none;
                 border: none;
-                box-shadow: 1px 1px 15px  rgb(147, 119, 121);  
-                background-color:rgba(250, 235, 215, 0.809);
+                box-shadow: 1px 1px 15px  $colorPrimario;
+                background-color: rgba(250, 235, 215, 0.809);
                 padding: 9px;
                 font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                border-radius: 5px;
+                box-shadow: 1px 1px 10px $colorPrimario;
                 
                 @media (max-width: 1024px) {
                     max-width: 300px;
@@ -132,3 +134,4 @@
         }
     }
 }
+

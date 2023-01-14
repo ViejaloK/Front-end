@@ -1,5 +1,5 @@
 .colecciones-coleccion {
-    background-color: bisque;
+    background-color:$colorPrimario;
     box-shadow: 1px 1px 3px black;
 }
 
@@ -12,5 +12,5 @@
 }
 
 .dropdown-item:hover {
-    background-color: antiquewhite;
+    background-color:$colorPrimario;
 }

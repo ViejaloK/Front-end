@@ -11,3 +11,10 @@
         position: fixed;
     }
 }
+
+.nav-active {
+    @media (max-width: 1024px) {
+        transform: translateX(0%);
+        transition: 1s;
+    }
+}

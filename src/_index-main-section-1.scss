@@ -2,12 +2,12 @@
 .inicio-encabezado-texto-1 {
     position: absolute;
     font-size: 40px;
-    color: antiquewhite;
+    color: $colorPrimario;
     font-family: 'Nerko One', cursive;
     font-weight: 100;
     top: 400px;
     left: 100px;
-    text-shadow: 1px 1px 5px rgb(0, 0, 0);
+    text-shadow: 1px 1px 5px black;
     z-index: 100;
 
     @media (max-width: 1024px) {
@@ -20,12 +20,12 @@
 .inicio-encabezado-texto-2 {
     position: absolute;
     font-size: 40px;
-    color: antiquewhite;
+    color: $colorPrimario;
     font-family: 'Nerko One', cursive;
     font-weight: 100;
     top: 700px;
     right: 100px;
-    text-shadow: 1px 1px 5px rgb(0, 0, 0);
+    text-shadow: 1px 1px 5px black;
     z-index: 100;
 
     @media (max-width: 1024px) {
