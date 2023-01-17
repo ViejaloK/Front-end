@@ -4,5 +4,5 @@
 }
 
 .tienda-online-precio {
-    @include precio(rgb(92, 92, 91),$colorPrimario)
+    @include precio(rgb(92, 92, 91), $colorPrimario)
 }

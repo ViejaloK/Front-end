@@ -4,7 +4,7 @@ header {
     display: grid;
     grid-template-rows: 120px 80px;
 
-    div {        
+    div {
         justify-content: center;
         align-items: center;
         grid-row: 1;
@@ -19,12 +19,12 @@ header {
             font-size: 125px;
             transition: 2s;
         }
-        
+
         h1 {
             font-size: 105px;
             font-weight: 500;
         }
-        
+
         a {
             text-decoration: none;
             color: $colorPrimario;
@@ -66,7 +66,7 @@ header {
             padding-top: 15px;
 
             @media (max-width: 1024px) {
-                display: inline-block;   
+                display: inline-block;
             }
 
             li {
@@ -87,7 +87,7 @@ header {
                     font-family: 'Nerko One', cursive;
                     font-size: 27px;
                     font-weight: 400;
-                    text-shadow: 2px 2px 50px ;
+                    text-shadow: 2px 2px 50px;
 
 
                 }
@@ -95,9 +95,8 @@ header {
         }
 
     }
-   
+
     @media (max-width: 1024px) {
         grid-template-rows: 120px;
     }
 }
-
