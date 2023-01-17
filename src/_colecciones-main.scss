@@ -4,11 +4,7 @@
 }
 
 .colecciones-encargo {
-    background-color: #ddd;
-    padding: 7px 15px;
-    text-decoration: none;
-    border: none;
-    box-shadow: 1px 1px 3px black;
+    @include precio ($colorPrimario, $colorMenu)
 }
 
 .dropdown-item:hover {

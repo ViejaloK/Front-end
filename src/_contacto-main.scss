@@ -60,78 +60,61 @@
 
         form {
             width: 600px; 
-        }
-
-        .contacto-contenedor-form {
             @media (max-width: 1024px) {
                 width: 300px;
             }
-            
-        }
 
-        div {
-            padding: 3px;
-            input {
-                padding: 9px;
-                width: 100%;
-                max-width: 600px;
-                border: none;
-                background-color:rgba(250, 235, 215, 0.809);
-                box-shadow: 1px 1px 10px rgb(192, 189, 186);
-                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-                border-radius: 4px;
-
-                :focus {
-                    outline: none;
-                    background-color: white;
-                }
-
-                ::placeholder {
-                    color: #999;
+            div {
+                padding: 3px;
+                input {
+                    padding: 9px;
+                    width: 100%;
+                    border: none;
+                    background-color:rgba(250, 235, 215, 0.809);
+                    box-shadow: 1px 1px 10px $colorPrimario;
                     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                    border-radius: 4px;
+
+                    :focus {
+                        outline: none;
+                        background-color: white;
+                    }
+
+                    ::placeholder {
+                        color: #999;
+                        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                    }
+                    
+                    .boton {
+                        width: 150px;
+                        color: #666;
+                        font-size: 21px;
+                        box-shadow: 1px 1px 15px  $colorPrimario;
+
+                        :active {
+                            background-color: $colorPrimario;
+                            font-size: 23px;
+                        }
+
+                        @media (max-width: 1024px) {
+                            margin: 6px;
+                            margin-bottom: 20px;
+                        }
+                    }
                 }
-                
-                .boton {
-                    width: 150px;
-                    color: #666;
-                    font-size: 21px;
+
+                textarea {
+                    min-height: 140px;
+                    width: 100%;
+                    border: none;
                     box-shadow: 1px 1px 15px  $colorPrimario;
-
-                    :active {
-                        background-color: rgb(232, 208, 177);
-                        font-size: 23px;
-                    }
-
-                    @media (max-width: 1024px) {
-                        margin: 6px;
-                        margin-bottom: 20px;
-                    }
-                }
-
-                @media (max-width: 1024px) {
-                    max-width: 300px;
+                    background-color: rgba(250, 235, 215, 0.809);
+                    padding: 9px;
+                    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                    border-radius: 5px;
+                    box-shadow: 1px 1px 10px $colorPrimario;
                 }
             }
-
-            textarea {
-                min-height: 140px;
-                max-width: 600px;
-                resize: none;
-                border: none;
-                box-shadow: 1px 1px 15px  $colorPrimario;
-                background-color: rgba(250, 235, 215, 0.809);
-                padding: 9px;
-                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-                border-radius: 5px;
-                box-shadow: 1px 1px 10px $colorPrimario;
-                
-                @media (max-width: 1024px) {
-                    max-width: 300px;
-                }
-            }
-
-
         }
     }
 }
-

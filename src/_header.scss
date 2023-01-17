@@ -9,19 +9,22 @@ header {
         align-items: center;
         grid-row: 1;
         display: flex;
-        font-size: 105px;
         text-shadow: 2px 2px 10px rgb(143, 142, 142);
         font-family: 'Euphoria Script', cursive;
         letter-spacing: 3px;
-        font-weight: 500;
 
         :hover {
             color: $colorContacto;
             text-shadow: 1px 1px 20px $colorContacto;
-            font-size: 135px;
+            font-size: 125px;
             transition: 2s;
         }
-
+        
+        h1 {
+            font-size: 105px;
+            font-weight: 500;
+        }
+        
         a {
             text-decoration: none;
             color: $colorPrimario;
