@@ -435,12 +435,14 @@ header nav ul li a {
   left: 100px;
   text-shadow: 1px 1px 5px black;
   z-index: 100;
+  width: 500px;
 }
 @media (max-width: 1024px) {
   .inicio-encabezado-texto-1 {
-    top: 300px;
+    top: 200px;
     font-size: 30px;
-    left: 30px;
+    left: 20px;
+    width: 250px;
   }
 }
 
@@ -454,12 +456,14 @@ header nav ul li a {
   right: 100px;
   text-shadow: 1px 1px 5px black;
   z-index: 100;
+  width: 500px;
 }
 @media (max-width: 1024px) {
   .inicio-encabezado-texto-2 {
     top: 500px;
     font-size: 30px;
-    right: 20px;
+    right: 10px;
+    width: 250px;
   }
 }
 

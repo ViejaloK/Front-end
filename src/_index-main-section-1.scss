@@ -8,11 +8,13 @@
     left: 100px;
     text-shadow: 1px 1px 5px black;
     z-index: 100;
+    width: 500px;
 
     @media (max-width: 1024px) {
-        top: 300px;
+        top: 200px;
         font-size: 30px;
-        left: 30px;
+        left: 20px;
+        width: 250px;
     }
 }
 
@@ -26,11 +28,13 @@
     right: 100px;
     text-shadow: 1px 1px 5px black;
     z-index: 100;
+    width: 500px;
 
     @media (max-width: 1024px) {
         top: 500px;
         font-size: 30px;
-        right: 20px;
+        right: 10px;
+        width: 250px;
     }
 }
 
