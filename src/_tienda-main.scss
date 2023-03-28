@@ -4,5 +4,15 @@
 }
 
 .tienda-online-precio {
-    @include precio(rgb(92, 92, 91), $colorPrimario)
+    @include precio(rgb(92, 92, 91), $colorPrimario);
+    margin-left: 30px;
+    @media (max-width: 1024px) {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+.agregar-carrito {
+    width: 30px;
+    height: 30px;
 }

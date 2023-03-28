@@ -4,7 +4,12 @@
 }
 
 .colecciones-encargo {
-    @include precio ($colorPrimario, $colorMenu)
+    @include precio ($colorPrimario, $colorMenu);
+    margin-right: 10px;
+
+    @media (max-width: 1024px) {
+        margin-right: 3px;
+    }
 }
 
 .dropdown-item:hover {

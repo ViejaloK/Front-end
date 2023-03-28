@@ -1,9 +1,16 @@
+Desarrollo Web
+
 Full Responsive. 
 Usar Sass - Import - Variables - Extend - Mixin
 Seo - Imagenes Alt - Metadescription - Etiquetas - Palabras claves - 
 Live Sass compiler.
 Git Hub.
 Buen uso de comentarios.
+
+JavaScript
+
+Uso de storage - DOM - JSON.
+
 
 
 

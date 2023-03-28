@@ -1,0 +1,21 @@
+.carrito-container {
+    display: grid;
+    grid-template-areas: 
+    "contenido contenido contenido informacion informacion"; 
+    align-items: center;
+    min-height: 50vh;
+}
+
+.carrito-contenido {
+    grid-area: contenido;
+    text-align: center;
+    justify-items: center;
+    padding: 50px;
+}
+
+.carrito-informacion {
+    grid-area: informacion;
+    text-align: center;
+    justify-items: center;
+    padding: 50px;
+}
