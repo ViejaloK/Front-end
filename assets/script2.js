@@ -12,6 +12,7 @@ const borrar_carro = document.getElementById("limpiar");
 const carro_container = document.getElementById("carro-container");
 let hayElementos = false;
 
+/*Esta funcion es la que toma los valores del storage y los convierte nuevamente en tarjetas */
 function showcaseCreate(array, contenedor) {
     
     contenedor.innerHTML = "";

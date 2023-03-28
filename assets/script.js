@@ -40,6 +40,10 @@ menubar.addEventListener("click", () => {
         localStorage.setItem('carritoDeCompras', JSON.stringify(carrito));
     }
 
+    /*Esta funcion es la que toma los valores de la tarjeta en la que se clickea
+    supongo habra una forma mas eficiente de hacerlo. de todas formas la idea es 
+    que las tarjetas que existen hardcodeadas en el html desaparescan y que se 
+    generen con un script dependiendo lo que el vendedor quiera*/
     function tomarValores (boton) {
         switch (boton) {
             case campera_1_b:
