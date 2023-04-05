@@ -31,10 +31,6 @@ header {
         
     }
 
-    .position {
-        position: absolute;
-        top:150px
-    }
 
     div {
         justify-content: center;
@@ -89,6 +85,7 @@ header {
         justify-content: center;
         text-align: center;
         margin: auto;
+
 
         ul {
             display: flex;

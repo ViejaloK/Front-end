@@ -1,3 +1,10 @@
+/*Reset*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 /*Colores*/
 .tienda-online-text {
   font-size: 60px;
@@ -51,6 +58,14 @@ body {
   .colecciones-encargo {
     margin-right: 3px;
   }
+}
+.colecciones-encargo :hover {
+  scale: 1.2;
+  transition: 1.5s;
+}
+.colecciones-encargo :active {
+  padding: 5px;
+  transition: 0.1s;
 }
 
 .dropdown-item:hover {
@@ -322,10 +337,6 @@ header .carrito {
     right: 20px;
     top: 10px;
   }
-}
-header .position {
-  position: absolute;
-  top: 150px;
 }
 header div {
   justify-content: center;
@@ -636,13 +647,6 @@ main {
   .quienes-somos-flex {
     margin: 0;
   }
-}
-
-/*Reset*/
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
 }
 
 .carrito-container {
