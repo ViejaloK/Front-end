@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,8 @@
     <title>Meti - carrito</title>
     <link rel="stylesheet" href="../assets/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="sweetalert2.all.min.js" crossorigin="anonymous" content="application/javascript"></script>
     <link href="https://fonts.googleapis.com/css2?family=Euphoria+Script&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
@@ -16,6 +19,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/e1e412a42e.js" crossorigin="anonymous"></script>
+    
 </head>
 
 <body>
@@ -45,22 +49,27 @@
             </ul>
         </nav>
 
-        <a href="./carrito.html"><i class="fa-solid fa-cart-shopping carrito"></i></a>
+        <a href="./carrito.html"><i  id="ico_carro" class="fa-solid fa-cart-shopping carrito"></i></a>
     </header>
 
     <main>
 
+        <div class="clima-recomendacion" id="clima-recomendacion">        
+        </div>
+
         <!--En un futuro agregaria informacion sobre la compra, como el total, cuotas, opcines de pago etc. -->
 
-        <div class="carrito-container row p-5"> 
+        <div class="carrito-container p-4" id="cart-main"> 
 
-            <div id="carro-container" class="carrito-contenido ">
+            <div id="cart-container" class="carrito-contenido ">
                 <p class="tienda-online-text">No hay productos en tu carrito</p>
                 <h4>¡Visita nuestra tienda y ped tu producto favorito!</h4>
             </div>
     
-            <div class="carrito-informacion">
-                <button id="limpiar"  class="colecciones-encargo"> Limpiar carrito </button>
+            <div class="carrito-informacion" id="buttons">
+                <button id="comprar" hidden class=" buttons-carrito finalizar"> Finalizar compra </button>
+                <h6 class="total" id="total"></h6>
+                <button id="limpiar" hidden class=" buttons-carrito cancelar"> Limpiar carrito </button>
             </div>
         </div>
 
@@ -105,7 +114,10 @@
         <a href=""><img src="../assets/images/WhatsApp.png" alt="WhatsApp" class="footer-icon-whatsapp"></a>
 
     </footer>
+    
     <script src="../assets/script2.js"></script>
+    <script src="../assets/script3.js"></script>  
+
 
 </body>
 

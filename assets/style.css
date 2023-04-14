@@ -649,10 +649,20 @@ main {
   }
 }
 
+.clima-recomendacion {
+  background-color: rgb(240, 220, 200);
+  font-size: 22px;
+  padding-top: 5px;
+  padding-bottom: 0px;
+  font-family: "Nerko One", cursive;
+  text-align: center;
+  color: rgb(114, 111, 98);
+}
+
 .carrito-container {
   display: grid;
-  grid-template-areas: "contenido contenido contenido informacion informacion";
-  align-items: center;
+  grid-template-areas: "contenido  informacion";
+  grid-template-columns: 80% 20%;
   min-height: 50vh;
 }
 
@@ -669,6 +679,37 @@ main {
   justify-items: center;
   padding: 50px;
 }
+@media (max-width: 1024px) {
+  .carrito-informacion {
+    padding: 20px;
+  }
+}
+
+.buttons-carrito {
+  padding: 5px;
+  font-family: "Nerko One", cursive;
+  font-size: 19px;
+  color: rgb(72, 72, 72);
+  border-radius: 8px;
+}
+
+.finalizar {
+  margin-top: 100px;
+  background-color: rgb(198, 224, 126);
+}
+
+.cancelar {
+  margin-top: 30px;
+  background-color: rgb(224, 167, 126);
+}
+
+.total {
+  font-family: "Nerko One", cursive;
+  font-size: 23px;
+  font-weight: 300;
+  color: rgb(76, 76, 76);
+  padding: 9px;
+}
 
 .tienda-online-text {
   color: rgb(240, 220, 200);
@@ -683,12 +724,27 @@ main {
   color: rgb(240, 220, 200);
   border: none;
   margin-bottom: 8px;
-  margin-left: 30px;
+  margin-left: 150px;
+}
+@media (max-width: 1400px) {
+  .tienda-online-precio {
+    margin-left: 80px;
+  }
 }
 @media (max-width: 1024px) {
   .tienda-online-precio {
     margin-left: 10px;
     margin-right: 10px;
+  }
+}
+@media (max-width: 575px) {
+  .tienda-online-precio {
+    margin-left: 150px;
+  }
+}
+@media (max-width: 425px) {
+  .tienda-online-precio {
+    margin-left: 70px;
   }
 }
 

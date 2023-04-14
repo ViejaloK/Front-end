@@ -2,28 +2,30 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Tienda de las camperas artesanales mas lindas de Cordóba. gorros, bufandas y ¡todo lo que te hacer falta para no pasar frio!">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Tienda de las camperas artesanales mas lindas de Cordóba. gorros, bufandas y ¡todo lo que te hacer falta para no pasar frio!" />
     <title>Meti - tienda online</title>
-    <link rel="stylesheet" href="../assets/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Euphoria+Script&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Euphoria+Script&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
     <script src="https://kit.fontawesome.com/e1e412a42e.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="sweetalert2.all.min.js" crossorigin="anonymous" content="application/javascript"></script>
 </head>
 
 <body>
-
     <header>
-
-        <img src="../assets/images/menu.png" alt="hamburguesa-menu" class="hamburguesa-ico" id="menubar">
-
+        <img src="../assets/images/menu.png" alt="hamburguesa-menu" class="hamburguesa-ico" id="menubar" />
 
         <div>
             <h1><a href="../index.html">Meti</a></h1>
@@ -45,23 +47,28 @@
             </ul>
         </nav>
 
-        <a href="./carrito.html"><i class="fa-solid fa-cart-shopping carrito"></i></a>
+        <a href="./carrito.html"><i id="ico_carro" class="fa-solid fa-cart-shopping carrito"></i></a>
     </header>
 
     <main>
-
+        <div class="clima-recomendacion" id="clima-recomendacion">        
+        </div>
         <section class="py-5 text-center container">
-            <div class="row py-lg-5">
+            <div class="row py-lg-4">
                 <div class="col-lg-6 col-md-8 mx-auto">
                     <h1 class="tienda-online-text">Tienda online</h1>
                 </div>
             </div>
 
             <div class="mt-4">
-                <h4>¡Explora tambien nuestras colecciones para encontrar tu prenda ideal!</h4>
-                <small>Envios a domicilio en todo el pais, compras superiores a 8000$ sin costo de envio</small>
+                <h4>
+                    ¡Explora tambien nuestras colecciones para encontrar tu prenda
+                    ideal!
+                </h4>
+                <h3 class="py-3">¡Todas las prendas son unicas!</h3>
+                <small>Envios a domicilio en todo el pais, compras superiores a 8000$ sin
+                    costo de envio</small>
             </div>
-
         </section>
 
         <div class="album py-5 bg-light">
@@ -70,14 +77,18 @@
                     <!--Estas etiquetas desapareceran en un futuro con la idea de que sean generadas mediante un script -->
                     <div class="col">
                         <div class="card shadow-sm">
-                            <img class="rounded-top" id="1-i" src="../assets/images/Tienda-online-1.jpeg" alt="camperas Meti">
+                            <img class="rounded-top" id="1-i" src="../assets/images/Tienda-online-1.jpeg"
+                                alt="camperas Meti" />
                             <div class="card-body">
-                                <p id="1-d" class="card-text">Camperas de niña - flores con relieve - hojas bordadas bolsillo
-                                    clasico - cuello a la base - color pastel.</p>
+                                <p id="1-d" class="card-text">
+                                    Buzito de niña de algodon, color verde claro con aplicaciones, bolsillo kanguro y cuello a la base.
+                                </p>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <small class="text-muted">0 - 2 - 4 - 6 - 8 - 10 - 12</small>
-                                    <p id="1-p" class="tienda-online-precio">$3500</p>
-                                    <a href=""><button class="colecciones-encargo" id="1-b"><img src="../assets/images/agregar-carrito.png" class="agregar-carrito" alt="carrito de compras"></button></a>
+                                    <small id="1-t" class="text-muted">Talle 4</small>
+                                    <p id="1-p" class="tienda-online-precio" data-valor= "7000">$7000</p>
+                                    <a href=""><button class="colecciones-encargo" id="1-b">
+                                            <img src="../assets/images/agregar-carrito.png" class="agregar-carrito"
+                                                alt="carrito de compras" /></button></a>
                                 </div>
                             </div>
                         </div>
@@ -85,14 +96,18 @@
                     <!--Estas etiquetas desapareceran en un futuro con la idea de que sean generadas mediante un script -->
                     <div class="col">
                         <div class="card shadow-sm">
-                            <img class="rounded-top" id="2-i" src="../assets/images/Tienda-online-2.jpeg" alt="camperas Meti">
+                            <img class="rounded-top" id="2-i" src="../assets/images/Tienda-online-2.jpeg"
+                                alt="camperas Meti" />
                             <div class="card-body">
-                                <p id="2-d" class="card-text">Camperas de niña - flores con relieve - hojas bordadas bolsillo
-                                    clasico - cuello a la base - color pastel.</p>
+                                <p id="2-d" class="card-text">
+                                    Camperita de niña, morley algodon con cierre, color crudo con aplicaciones y cuello baby. 
+                                </p>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <small class="text-muted">0 - 2 - 4 - 6 - 8 - 10 - 12</small>
-                                    <p id="2-p" class="tienda-online-precio">$3500</p>
-                                    <a href=""><button class="colecciones-encargo" id="2-b"><img src="../assets/images/agregar-carrito.png" class="agregar-carrito" alt="carrito de compras"></button></a>
+                                    <small id="2-t" class="text-muted">Talle 8</small>
+                                    <p id="2-p" class="tienda-online-precio" data-valor="8000">$8000</p>
+                                    <a href=""><button class="colecciones-encargo" id="2-b">
+                                            <img src="../assets/images/agregar-carrito.png" class="agregar-carrito"
+                                                alt="carrito de compras" /></button></a>
                                 </div>
                             </div>
                         </div>
@@ -100,14 +115,18 @@
                     <!--Estas etiquetas desapareceran en un futuro con la idea de que sean generadas mediante un script -->
                     <div class="col">
                         <div class="card shadow-sm">
-                            <img id="3-i" class="rounded-top" src="../assets/images/Tienda-online-3.jpeg" alt="camperas Meti">
+                            <img id="3-i" class="rounded-top" src="../assets/images/Tienda-online-3.jpeg"
+                                alt="camperas Meti" />
                             <div class="card-body">
-                                <p id="3-d" class="card-text">Camperas de niña - flores con relieve - hojas bordadas bolsillo
-                                    clasico - cuello a la base - color pastel.</p>
+                                <p id="3-d" class="card-text">
+                                    Camperita de niña de algodon con cierre, color crudo con aplicaciones y cuello bolado.
+                                </p>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <small class="text-muted">0 - 2 - 4 - 6 - 8 - 10 - 12</small>
-                                    <p id="3-p" class="tienda-online-precio">$3500</p>
-                                    <a href=""><button class="colecciones-encargo" id="3-b"><img src="../assets/images/agregar-carrito.png" class="agregar-carrito" alt="carrito de compras"></button></a>
+                                    <small id="3-t" class="text-muted">Talle 10</small>
+                                    <p id="3-p" class="tienda-online-precio" data-valor="8500">$8500</p>
+                                    <a href=""><button class="colecciones-encargo" id="3-b">
+                                            <img src="../assets/images/agregar-carrito.png" class="agregar-carrito"
+                                                alt="carrito de compras" /></button></a>
                                 </div>
                             </div>
                         </div>
@@ -115,14 +134,18 @@
                     <!--Estas etiquetas desapareceran en un futuro con la idea de que sean generadas mediante un script -->
                     <div class="col">
                         <div class="card shadow-sm">
-                            <img id="4-i" class="rounded-top" src="../assets/images/Tienda-online-4.jpeg" alt="camperas Meti">
+                            <img id="4-i" class="rounded-top" src="../assets/images/Tienda-online-4.jpeg"
+                                alt="camperas Meti" />
                             <div class="card-body">
-                                <p id="4-d" class="card-text">Camperas de niña - flores con relieve - hojas bordadas bolsillo
-                                    clasico - cuello a la base - color pastel.</p>
+                                <p id="4-d" class="card-text">
+                                    Buzito de niño de algodon, color mezcla azul y grises, con aplicaciones, bolsillo kanguro y cuello a la base.
+                                </p>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <small class="text-muted">0 - 2 - 4 - 6 - 8 - 10 - 12</small>
-                                    <p id="4-p" class="tienda-online-precio">$3500</p>
-                                    <a href=""><button class="colecciones-encargo" id="4-b"><img src="../assets/images/agregar-carrito.png" class="agregar-carrito" alt="carrito de compras"></button></a>
+                                    <small id="4-t" class="text-muted">Talle 2</small>
+                                    <p id="4-p" class="tienda-online-precio" data-valor="7000">$7000</p>
+                                    <a href=""><button class="colecciones-encargo" id="4-b">
+                                            <img src="../assets/images/agregar-carrito.png" class="agregar-carrito"
+                                                alt="carrito de compras" /></button></a>
                                 </div>
                             </div>
                         </div>
@@ -130,29 +153,18 @@
                     <!--Estas etiquetas desapareceran en un futuro con la idea de que sean generadas mediante un script -->
                     <div class="col">
                         <div class="card shadow-sm">
-                            <img id="5-i" class="rounded-top" src="../assets/images/Tienda-online-5.jpeg" alt="camperas Meti">
+                            <img id="5-i" class="rounded-top" src="../assets/images/Tienda-online-5.jpeg"
+                                alt="camperas Meti" />
                             <div class="card-body">
-                                <p id="5-d" class="card-text">Camperas de niña - flores con relieve - hojas bordadas bolsillo
-                                    clasico - cuello a la base - color pastel.</p>
-                                <div class="d-flex justify-content-between align-items-center"> <small
-                                        class="text-muted">0 - 2 - 4 - 6 - 8 - 10 - 12</small>
-                                        <p id="5-p" class="tienda-online-precio">$3500</p>
-                                        <a href=""><button class="colecciones-encargo" id="5-b"><img src="../assets/images/agregar-carrito.png" class="agregar-carrito" alt="carrito de compras"></button></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Estas etiquetas desapareceran en un futuro con la idea de que sean generadas mediante un script -->
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <img id="6-i" class="rounded-top" src="../assets/images/Tienda-online-6.jpeg" alt="camperas Meti">
-                            <div class="card-body">
-                                <p id="6-d" class="card-text">Camperas de niña - flores con relieve - hojas bordadas bolsillo
-                                    clasico - cuello a la base - color pastel.</p>
+                                <p id="5-d" class="card-text">
+                                    Buzito de niña de algodon, color rosa con aplicaciones y capucha.
+                                </p>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <small class="text-muted">0 - 2 - 4 - 6 - 8 - 10 - 12</small>
-                                    <p id="6-p" class="tienda-online-precio">$3500</p>
-                                    <a href=""><button class="colecciones-encargo" id="6-b"><img src="../assets/images/agregar-carrito.png" class="agregar-carrito" alt="carrito de compras"></button></a>
+                                    <small id="5-t" class="text-muted">Talle 4</small>
+                                    <p id="5-p" class="tienda-online-precio" data-valor="7500">$7500</p>
+                                    <a href=""><button class="colecciones-encargo" id="5-b">
+                                            <img src="../assets/images/agregar-carrito.png" class="agregar-carrito"
+                                                alt="carrito de compras" /></button></a>
                                 </div>
                             </div>
                         </div>
@@ -160,29 +172,18 @@
                     <!--Estas etiquetas desapareceran en un futuro con la idea de que sean generadas mediante un script -->
                     <div class="col">
                         <div class="card shadow-sm">
-                            <img id="7-i" class="rounded-top" src="../assets/images/Tienda-online-7.jpeg" alt="camperas Meti">
+                            <img id="6-i" class="rounded-top" src="../assets/images/Tienda-online-6.jpeg"
+                                alt="camperas Meti" />
                             <div class="card-body">
-                                <p id="7-d" class="card-text">Camperas de niña - flores con relieve - hojas bordadas bolsillo
-                                    clasico - cuello a la base - color pastel.</p>
-                                <div class="d-flex justify-content-between align-items-center"> <small
-                                        class="text-muted">0 - 2 - 4 - 6 - 8 - 10 - 12</small>
-                                        <p id="7-p" class="tienda-online-precio">$3500</p>
-                                        <a href=""><button class="colecciones-encargo" id="7-b"><img src="../assets/images/agregar-carrito.png" class="agregar-carrito" alt="carrito de compras"></button></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Estas etiquetas desapareceran en un futuro con la idea de que sean generadas mediante un script -->
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <img id="8-i" class="rounded-top" src="../assets/images/Tienda-online-8.jpeg" alt="camperas Meti">
-                            <div class="card-body">
-                                <p id="8-d" class="card-text">Camperas de niña - flores con relieve - hojas bordadas bolsillo
-                                    clasico - cuello a la base - color pastel.</p>
+                                <p id="6-d" class="card-text">
+                                    Camperita de niña de algodon con cierre, color mescla rosa y crudo, con aplicaciones y cuello baby.
+                                </p>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <small class="text-muted">0 - 2 - 4 - 6 - 8 - 10 - 12</small>
-                                    <p id="8-p" class="tienda-online-precio">$3500</p>
-                                    <a href=""><button class="colecciones-encargo" id="8-b"><img src="../assets/images/agregar-carrito.png" class="agregar-carrito" alt="carrito de compras"></button></a>
+                                    <small id="6-t" class="text-muted">Talle 2</small>
+                                    <p id="6-p" class="tienda-online-precio" data-valor="8000">$8000</p>
+                                    <a href=""><button class="colecciones-encargo" id="6-b">
+                                            <img src="../assets/images/agregar-carrito.png" class="agregar-carrito"
+                                                alt="carrito de compras" /></button></a>
                                 </div>
                             </div>
                         </div>
@@ -190,63 +191,101 @@
                     <!--Estas etiquetas desapareceran en un futuro con la idea de que sean generadas mediante un script -->
                     <div class="col">
                         <div class="card shadow-sm">
-                            <img id="9-i" class="rounded-top" src="../assets/images/Tienda-online-9.jpeg" alt="camperas Meti">
+                            <img id="7-i" class="rounded-top" src="../assets/images/Tienda-online-7.jpeg"
+                                alt="camperas Meti" />
                             <div class="card-body">
-                                <p id="9-d" class="card-text">Camperas de niña - flores con relieve - hojas bordadas bolsillo
-                                    clasico - cuello a la base - color pastel.</p>
+                                <p id="7-d" class="card-text">
+                                    Buzito de niña de algodon, color mezcla celeste y crudo, con aplicaciones y cuello a la base bordado.
+                                </p>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <small class="text-muted">0 - 2 - 4 - 6 - 8 - 10 - 12</small>
-                                    <p id="9-p" class="tienda-online-precio">$3500</p>
-                                    <a href=""><button class="colecciones-encargo" id="9-b"><img src="../assets/images/agregar-carrito.png" class="agregar-carrito" alt="carrito de compras"></button></a>
+                                    <small id="7-t" class="text-muted">Talle 4</small>
+                                    <p id="7-p" class="tienda-online-precio" data-valor="7000">$7000</p>
+                                    <a href=""><button class="colecciones-encargo" id="7-b">
+                                            <img src="../assets/images/agregar-carrito.png" class="agregar-carrito"
+                                                alt="carrito de compras" /></button></a>
                                 </div>
                             </div>
                         </div>
                     </div>
-
+                    <!--Estas etiquetas desapareceran en un futuro con la idea de que sean generadas mediante un script -->
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img id="8-i" class="rounded-top" src="../assets/images/Tienda-online-8.jpeg"
+                                alt="camperas Meti" />
+                            <div class="card-body">
+                                <p id="8-d" class="card-text">
+                                    Camperita de niña de algodon con botones, color crudo con aplicaciones y cuello bolado.
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small id="8-t" class="text-muted">Talle 4</small>
+                                    <p id="8-p" class="tienda-online-precio" data-valor="8500">$8500</p>
+                                    <a href=""><button class="colecciones-encargo" id="8-b">
+                                            <img src="../assets/images/agregar-carrito.png" class="agregar-carrito"
+                                                alt="carrito de compras" /></button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Estas etiquetas desapareceran en un futuro con la idea de que sean generadas mediante un script -->
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img id="9-i" class="rounded-top" src="../assets/images/Tienda-online-9.jpeg"
+                                alt="camperas Meti" />
+                            <div class="card-body">
+                                <p id="9-d" class="card-text">
+                                    Buzito de niña de algodon, color verde claro con aplicaciones, bolsillo kanguro y capucha.
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small id="9-t" class="text-muted">Talle 2</small>
+                                    <p id="9-p" class="tienda-online-precio" data-valor="7500">$7500</p>
+                                    <a href=""><button class="colecciones-encargo" id="9-b">
+                                            <img src="../assets/images/agregar-carrito.png" class="agregar-carrito"
+                                                alt="carrito de compras" /></button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-
     </main>
 
     <footer>
-
         <ul class="footer-menu">
-
             <li>
                 <a href="">Terminos y condiciones</a>
             </li>
 
             <li>
-                <p> Lunes a Viernes de 9:00 hs a 20:00 hs - Chubut 832 - B° Providencia </p>
+                <p>
+                    Lunes a Viernes de 9:00 hs a 20:00 hs - Chubut 832 - B° Providencia
+                </p>
             </li>
-
         </ul>
 
         <p class="footer-redes-text">¡Seguinos en nuestras redes!</p>
 
         <ul class="footer-redes">
-
             <li>
-                <a href=""><img src="../assets/images/Facebook.png" class="footer-icon-facebook" alt="Facebook"></a>
+                <a href=""><img src="../assets/images/Facebook.png" class="footer-icon-facebook" alt="Facebook" /></a>
             </li>
 
             <li>
                 <a href=""><img src="../assets/images/Instagram_icon.png.webp" class="footer-icon-instagram"
-                        alt="Instagram"></a>
+                        alt="Instagram" /></a>
             </li>
 
             <li>
-                <a href=""><img src="../assets/images/Twitter.png" class="footer-icon-twitter" alt="Twitter"></a>
+                <a href=""><img src="../assets/images/Twitter.png" class="footer-icon-twitter" alt="Twitter" /></a>
             </li>
-
         </ul>
 
-        <a href=""><img src="../assets/images/WhatsApp.png" alt="WhatsApp" class="footer-icon-whatsapp"></a>
-
+        <a href=""><img src="../assets/images/WhatsApp.png" alt="WhatsApp" class="footer-icon-whatsapp" /></a>
     </footer>
 
     <script src="../assets/script.js"></script>
+    <script src="../assets/script1.js"></script>
+    <script src="../assets/script3.js"></script> 
 </body>
 
 </html>

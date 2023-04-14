@@ -1,9 +1,11 @@
 .carrito-container {
     display: grid;
     grid-template-areas: 
-    "contenido contenido contenido informacion informacion"; 
-    align-items: center;
+    "contenido  informacion";
+    grid-template-columns: 80% 20%;
     min-height: 50vh;
+
+    
 }
 
 .carrito-contenido {
@@ -18,4 +20,34 @@
     text-align: center;
     justify-items: center;
     padding: 50px;
+
+    @media (max-width:1024px) {
+        padding: 20px;
+    }
+}
+
+.buttons-carrito {
+    padding: 5px;
+    font-family: 'Nerko One', cursive;
+    font-size: 19px;
+    color: rgb(72, 72, 72);
+    border-radius: 8px;
+}
+
+.finalizar {
+    margin-top: 100px;
+    background-color: rgb(198, 224, 126);
+}
+
+.cancelar {
+    margin-top: 30px;
+    background-color: rgb(224, 167, 126);
+}
+
+.total {
+    font-family: 'Nerko One', cursive;
+    font-size: 23px;
+    font-weight: 300;
+    color: rgb(76, 76, 76);
+    padding: 9px;
 }
