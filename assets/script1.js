@@ -9,7 +9,7 @@ menubar.addEventListener("click", () => {
 });
 
 const ico_carro = document.getElementById('ico_carro');
-carrito = JSON.parse(localStorage.getItem('carritoDeCompras'))
+let carrito = JSON.parse(localStorage.getItem('carritoDeCompras'))
 if (carrito.length > 0) {
     ico_carro.innerHTML = " !"
 }
