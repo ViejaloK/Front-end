@@ -36,7 +36,6 @@ function showcaseCreate(array, contenedor) {
                 <div class="d-flex justify-content-between align-items-center">
                     <small class="text-muted"> <b>${elemento.talle}</b></small>
                     <p class="tienda-online-precio">$${elemento.precio}</p>
-                    <a href=""><button class="colecciones-encargo">Borrar</button></a>
                 </div>
             </div>
         </div> `;
